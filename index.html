@@ -5,7 +5,7 @@
 	  <script>
 		function startup() {
 			var eventList = document.getElementById("eventList");
-			var evtSource = new EventSource("/catasto/crawler/crawler.php");
+			var evtSource = new EventSource("server.php");
 						
 			// Start listening on the event source			
 			evtSource.onmessage = function(e) {
